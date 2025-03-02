@@ -3,9 +3,305 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>My personal website</title>
     </head>
     <body>
-        <h1>Hello Larry</h1>
+        <!---------------  HEADER ---------------->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav_menu" id="nav_menu">
+                    <ul class="nav_list">
+                        <li>
+                            <a href="#hero"
+                                class="nav_link active_link">Hello</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="nav_link">skills</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="nav_link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="nav_link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav_link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav_close" id="nav_close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="nav_toggle" id="nav_toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <!--------------- HERO SECTION ---------------->
+            <section class="hero" id="hero">
+                <div class="hero_container container grid">
+                    <img src="../assets/1739271454060.jpg" alt="Profile Image"
+                        class="hero_img">
+
+                    <div class="hero_data">
+                        <h1 class="hero_name">Larry Otieno</h1>
+                        <p class="hero_work">Software Developer</p>
+                        <dl class="hero_list">
+                            <dt>AGE:</dt>
+                            <dd>20</dd>
+                            <dt>PHONE:</dt>
+                            <dd>0757777412</dd>
+                            <dt>EMAIL:</dt>
+                            <dd>larryotieno51@gmail.com</dd>
+                            <dt>ADDRESS</dt>
+                            <dd>Juja-Kiambu</dd>
+                        </dl>
+                        <div class="hero_socials">
+                            <a
+                                href="https://www.linkedin.com/in/larry-otieno-832825350/"
+                                target="_blank" class="hero_social_links">
+                                <i
+                                    class="fa-brands fa-linkedin hero_social_links"></i>
+                            </a>
+                            <a href="https://github.com/Larr-y1" target="_blank"
+                                class="hero_social_links">
+                                <i
+                                    class="fa-brands fa-github hero_social_links"></i>
+                            </a>
+                            <a href="https://web.facebook.com/?_rdc=1&_rdr#"
+                                target="_blank" class="hero_social-links">
+                                <i
+                                    class="fa-brands fa-facebook hero_social_links"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--------------- HERO SECTION END ---------------->
+
+            <!--------------- HELLO SECTION ---------------->
+            <section class="hello section container">
+                <h2 class="section_title">Hi_</h2>
+                <p class="hello_details text_lg">
+                    I am a dedicated software developer with experience in both
+                    frontend and backend technologies. I have worked with
+                    React.js and Vue.js for dynamic user interfaces, while
+                    leveraging Python and PHP for backend development. Skilled
+                    in deploying websites across various open-source platforms,
+                    I excel in both team collaboration and independent project
+                    management to deliver efficient software solutions.
+                </p>
+                <a
+                    href="#" class="button button_flex text_sm">
+                    <i class="fa-solid fa-download"></i>
+                    DOWNLOAD RESUME
+                </a>
+            </section>
+            <!--------------- HELLO SECTION END ---------------->
+
+            <!--------------- SERVICES SECTION  ---------------->
+            <section class="section services" id="services">
+                <div class="services_container">
+                    <h2 class="h2 section-title">Services_</h2>
+                    <ul class="services_list">
+                        <li class="services_item">
+                            <div class="services_card">
+                                <div class="card_icon">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <h3 class="h3 card_title"> Frontend
+                                    services</h3>
+                                <p class="card_text">
+                                    Build engaging and interactive user
+                                    experiences.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="services_item">
+                            <div class="services_card">
+                                <div class="card_icon">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <h3 class="h3 card_title">Backend
+                                    Technologies</h3>
+                                <p class="card_text">
+                                    Develop powerful server-side applications
+                                    with ease and effortlessly.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="services_item">
+                            <div class="services_card">
+                                <div class="card_icon">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                                <h3 class="h3 card_title"> Optimizing
+                                    Performance </h3>
+                                <p class="card_text">
+                                    I focus on performance optimization for
+                                    scalable applications.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="services_item">
+                            <div class="services_card">
+                                <div class="card_icon">
+                                    <i
+                                        class="fa-solid fa-square-poll-vertical"></i>
+                                </div>
+                                <h3 class="h3 card_title"> Real-World Deployment </h3>
+                                <p class="card_text">
+                                    Through my experience, I have gained
+                                    valuable insights and expertise 
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="services_item">
+                            <div class="services_card">
+                                <div class="card_icon">
+                                    <i class="fa-solid fa-users-line"></i>
+                                </div>
+                                <h3 class="h3 card_title"> Collaborative
+                                    Contributions</h3>
+                                <p class="card_text">
+                                    Contributing to community-driven
+                                    projects on GitHub.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+             <!--------------- SERVICES SECTION END ---------------->
+
+            <!--------------- SKILLS SECTION  ---------------->
+            <section class="section container" id="skills">
+                <h2 class="section_title"> Skills_ </h2>
+
+                <div class="skills_container grid">
+                    <div class="skills_content">
+                        <h3 class="skills_title text-sm">FRONTEND</h3>
+
+                        <div class="skills_list_grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <p class="skills_name text-sm">HTML</p>
+                                    <span class="skils_number text-sm">90%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 90%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <p class="skills_name text-sm">CSS</p>
+                                    <span class="skils_number text-sm">75%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <p class="skills_name text-sm">JavaScript</p>
+                                    <span class="skils_number text-sm">60%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 60%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <p class="skills_name text-sm">React</p>
+                                    <span class="skils_number text-sm">55%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 55%;"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skills_content">
+                        <h3 class="skills_title text-sm">BACKEND</h3>
+
+                        <div class="skills_list_grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <p class="skills_name text-sm">PHP</p>
+                                    <span class="skils_number text-sm">75%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"  style="width: 75%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <p class="skills_name text-sm">Laravel</p>
+                                    <span class="skils_number text-sm">85%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <p class="skills_name text-sm">Python</p>
+                                    <span class="skils_number text-sm">35%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"  style="width: 35%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <p class="skills_name text-sm">MySQL</p>
+                                    <span class="skils_number text-sm">70%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 70%;"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+             <!--------------- SKILLS SECTION END ---------------->
+        </main>
+
+        <script src="/src/script.js"></script>
     </body>
 </html>
