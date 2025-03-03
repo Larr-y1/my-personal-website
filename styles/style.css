@@ -252,6 +252,8 @@ input {
   background-position: 50%;
   padding-top: 5.5rem;
   margin-bottom: 2.5rem;
+  width: 100%;
+  height: 65%;
 }
 
 .hero::before {
@@ -660,124 +662,240 @@ input {
 
 
 /*=============== BreakPoints ===============*/
-/* for large devices */
-@media screen and (max-width: 1200px) {
-  :root {
-    
-  --fs-h1: 2.25rem;
-  --fs-h2: 1.75rem;
-  --fs-lg: 1rem;
-  --fs-base: 0.938rem;
-  --fs-sm: 0.813rem;
-  --fs-xs: 0.687rem;
-  }
+
+/* Larger devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
   .container {
-    max-width: 960px;
+      max-width: 1140px; /* Adjust as needed */
   }
 
   .hero_container {
-    grid-template-columns: 5fr 7fr;
+      grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+      align-items: center;
   }
 
-  
+  .hero::before {
+    height: 480px;
+  }
 
-  .services_container,
+  .hero_data {
+      text-align: left; /* Align text left on larger screens */
+  }
+
+  .hello_details {
+      max-width: 800px; /* Limit width of hello details */
+      margin: 0 auto;
+  }
+
+  .services_container {
+      max-width: 1100px; /* Adjust as needed */
+      margin: 0 auto;
+  }
+
+  .services_list {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for services */
+  }
+
   .skills_container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.875rem;
+      grid-template-columns: 1fr 1fr; /* Two columns for skills */
+  }
+
+  .contact_container {
+      grid-template-columns: 1fr 1fr; /* Two columns for contact */
+      align-items: start;
   }
 }
 
-@media screen and (max-width: 992px) {
+/* Medium devices (tablets, 768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
   .container {
-    max-width: 100%; /* Take full width */
-    width: 100%; /* Ensure full width */
-    padding-left: 0;
-    padding-right: 0;
+      max-width: 720px; /* Adjust as needed */
+  }
+   
+  
+  .hero::before {
+    height: 440px;
   }
 
+  .hero_img {
+    display: none;
+  }
+
+   
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
   
-.nav_menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(-100%);
-  transition: 0.3s;
+  .show_menu {
+    transform: translateX(0);
+  }
+  
+  .nav_List {
+    flex-direction: column;
+    row-gap: 2.125rem;
+    text-align: center;
+  }
+  .nav_toggle,
+  .nav_close {
+    display: block;
+  }
+  
+  .nav_close {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2.7rem;
+    left: 8%;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .nav_toggle {
+    color: #fff;
+    font-size: 1.25rem;
+    opacity: 0.5;
+  }
+  
+  .scroll_header .nav_toggle {
+    color: var(--text-color);
+    opacity: 1;
+  }
+  
+
+  .hero_container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+  }
+
+  .hero_data {
+      text-align: left;
+  }
+
+  .services_list {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for services */
+  }
+
+  .skills_container {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .contact_container {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+  }
 }
 
-.show_menu {
-  transform: translateX(0);
-}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .container {
+      max-width: 100%; /* Full width on small screens */
+      padding: 0 20px; /* Add some padding */
+  }
 
-.nav_List {
-  flex-direction: column;
-  row-gap: 2.125rem;
-  text-align: center;
-}
-.nav_toggle,
-.nav_close {
-  display: block;
-}
+  .hero_container {
+      grid-template-columns: 1fr; /* Single column on small screens */
+      text-align: center;
+  }
 
-.nav_close {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 2.7rem;
-  left: 8%;
-  cursor: pointer;
-  color: #fff;
-}
+  .hero_img {
+      display: none;
+  }
+   
+  .hero_list {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    margin: auto;
+  }
+  
+  .hero_list dd {
+    padding-left: 0.25em;
+    margin-right: 70px;
+  }
 
-.nav_toggle {
-  color: #fff;
-  font-size: 1.25rem;
-  opacity: 0.5;
-}
+  .hero::before {
+    height: 450px;
+  }
 
-.scroll_header .nav_toggle {
-  color: var(--text-color);
-  opacity: 1;
-}
+  .services_list {
+      grid-template-columns: 1fr; /* Single column for services */
+  }
 
-.hero {
-  max-width: 950px;
-  padding-top: 5.25rem;
-  background-position: fit
-  ;
+  .skills_container {
+      grid-template-columns: 1fr; /* Single column for skills */
+  }
 
-}
+  .contact_container {
+      grid-template-columns: 1fr; /* Single column for contact */
+  }
 
-.hero_container {
-  grid-template-columns: 1fr;
-}
-.hero_img {
-  display: none;
-}
+  .contact_info{
+      margin-bottom: 2rem;
+  }
+  .contact_form{
+      width: 100%;
+  }
 
-.section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.hero::before {
-  height: 50%;
-}
-
-}
-
-/* Mobile View (≤ 768px) */
-@media screen and (max-width: 768px) {
+   
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+  
+  .show_menu {
+    transform: translateX(0);
+  }
+  
+  .nav_List {
+    flex-direction: column;
+    row-gap: 2.125rem;
+    text-align: center;
+  }
+  .nav_toggle,
+  .nav_close {
+    display: block;
+  }
+  
+  .nav_close {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2.7rem;
+    left: 8%;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .nav_toggle {
+    color: #fff;
+    font-size: 1.25rem;
+    opacity: 0.5;
+  }
+  
+  .scroll_header .nav_toggle {
+    color: var(--text-color);
+    opacity: 1;
+  }
   
 }
 
-/* for small devices */
-@media screen and (max-width: 350px) {
-}
-
+/*=============== End of BreakPoints ===============*/
 
 
