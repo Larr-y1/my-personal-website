@@ -681,43 +681,36 @@ input {
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
-    /* Adjust as needed */
   }
 
   .hero::before {
-    height: 480px;
+    height: 493px;
   }
 
   .hero_data {
     text-align: left;
-    /* Align text left on larger screens */
   }
 
   .hello_details {
     max-width: 800px;
-    /* Limit width of hello details */
     margin: 0 auto;
   }
 
   .services_container {
     max-width: 1100px;
-    /* Adjust as needed */
     margin: 0 auto;
   }
 
   .services_list {
     grid-template-columns: repeat(3, 1fr);
-    /* Three columns for services */
   }
 
   .skills_container {
     grid-template-columns: 1fr 1fr;
-    /* Two columns for skills */
   }
 
   .contact_container {
     grid-template-columns: 1fr 1fr;
-    /* Two columns for contact */
     align-items: start;
   }
 }
@@ -726,7 +719,6 @@ input {
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 720px;
-    /* Adjust as needed */
   }
 
 
@@ -801,7 +793,6 @@ input {
 
   .services_list {
     grid-template-columns: repeat(2, 1fr);
-    /* Two columns for services */
   }
 
   .skills_container {
@@ -926,48 +917,36 @@ input {
 
 }
 
-/*=============== End of BreakPoints ===============*/
-
-
-
 /* Extra Small devices (phones, less than 576px) */
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
     padding: 0 15px;
-    /* Smaller padding on extra small screens */
   }
 
   .hero_container {
     grid-template-columns: 1fr;
-    /* Single column */
     gap: 2rem;
-    /* Adjust spacing as needed */
   }
 
   .hero_img {
     width: 100%;
-    /* Make image take full width */
     height: auto;
-    /* Maintain aspect ratio */
   }
 
   .hero_data {
     text-align: center;
-    /* Center text on extra small screens */
+    color: #fff;
   }
-
 
   .services_list {
     flex-direction: column;
-    /* Stack services vertically */
     align-items: center;
   }
 
   .skills_container {
     grid-template-columns: 1fr;
     margin-bottom: 20px;
-    /* Single column for skills */
   }
 
   .skills_data {
@@ -976,7 +955,10 @@ input {
 
   .contact_container {
     grid-template-columns: 1fr;
-    /* Single column for contact */
   }
 
 }
+/*=============== End of BreakPoints ===============*/
+
+
+
