@@ -56,7 +56,7 @@ const styleSwitcherToggle = document.querySelector('.style_switcher_toggler'),
     }
  });
 
- const alternateStyles = document.querySelectorAll('link.alternate_styles');
+ const alternateStyles = document.querySelectorAll('.alternate_styles');
 
  function setActiveStyle(color) {
     alternateStyles.forEach((style) => {
